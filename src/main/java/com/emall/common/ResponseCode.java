@@ -2,6 +2,7 @@ package com.emall.common;
 
 /**
  * Created by kaiyiwang on 18/1/22.
+ * 高复用响应对象
  */
 public enum ResponseCode {
 

@@ -7,6 +7,10 @@ import java.io.Serializable;
 
 /**
  * Created by kaiyiwang on 18/1/22.
+ *
+ * 高复用响应对象
+ *
+ * psvm+tab按两次,main主函数就出来了
  */
 
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
@@ -89,10 +93,6 @@ public class ServerResponse<T> implements Serializable {
     public static <T>ServerResponse<T> createByErrorCodeMessage(int errorCode, String errorMessage){
         return new ServerResponse<T>(errorCode, errorMessage);
     }
-
-
-
-
 
 
 
